@@ -1,20 +1,67 @@
 <html>
-  <!-- abertura inicial sinalizando que é um arquivo html -->
   <head>
-    <!-- cabeçalho aonde informa todos os dados de configuração da página -->
-    <title>Minha primeira pagina</title>
-    <!-- titulo da pagina -->
+    <title>MacBook Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .cordefundo {
+        background-color: black;
+      }
+
+      .color_white {
+        color: white;
+      }
+
+      .flex {
+        display: flex;
+      }
+      .center {
+        align-items: center;
+        justify-content: center;
+      }
+      .text-center {
+        text-align: center;
+      }
+      h1 {
+        font-size: 92px;
+        padding: 24px;
+      }
+      p {
+        font-size: 32px;
+        color: gray;
+        font-weight: 300;
+        max-width: 800px;
+      }
+    </style>
   </head>
   <body>
-    <!-- corpo da pagina -->
-    <h1>Primeira frase</h1>
-    <!-- estrutura de informação por relavancia -->
-    <h2>Primeira frase</h2>
-    <h3>Primeira frase</h3>
-    <h4>Primeira frase</h4>
-    <h5>Primeira frase</h5>
-    <h6>Primeira frase</h6>
-    <!-- paragrafo de texto -->
-    <p>paragrafo</p>
+    <section class="cordefundo">
+      <div class="flex center">
+        <img src="./imagens/macbook-pro.webp" />
+      </div>
+      <h1 class="color_white text-center">Tudo Pro para decolar.</h1>
+      <div class="flex center">
+        <p class="text-center">
+          O MacBook Pro de 13 polegadas está voando com toda potencia e
+          velocidade do novo chip M1 da Apple.
+        </p>
+      </div>
+
+      <div class="flex center">
+        <img src="./imagens/chip_m1.png" />
+        <span class="color_white">O poderoso chip M1 da Apple está aqui.</span>
+      </div>
+    </section>
   </body>
 </html>
